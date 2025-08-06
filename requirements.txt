@@ -17,3 +17,7 @@ pyspark
 
 # Dev
 pytest
+
+
+aiokafka
+jinja2

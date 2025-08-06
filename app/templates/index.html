@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BTCUSDT Live</title>
+</head>
+<body>
+  <h1>Live BTCUSDT Prices</h1>
+  <ul id="data-list"></ul>
+
+  <script>
+    const socket = new WebSocket("ws://localhost:8000/ws");
+    const list = document.getElementById("data-list");
+
+    socket.onmessage = function (event) {
+      const data = JSON.parse(event.data);
+      const item = document.createElement("li");
+      item.textContent = `Time: ${data.timestamp} | Price: ${data.price} | Spike: ${data.spike}`;
+      list.prepend(item);
+    };
+  </script>
+</body>
+</html>
