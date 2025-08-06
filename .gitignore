@@ -1,22 +1,10 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg
-*.egg-info/
-dist/
-build/
-
-# Environment
-.env
 venv/
-
-# Logs
+__pycache__/
+*.pyc
 *.log
-logs/
-
-# OS
+*.egg-info/
+*.idea/
+*.iml
 .DS_Store
-
-# IDEs
-.vscode/
-.idea/
+jars/
+checkpoints/
