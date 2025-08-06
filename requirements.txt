@@ -1,0 +1,19 @@
+# General Python
+requests
+websockets
+python-dotenv
+pydantic
+loguru
+
+# Kafka
+kafka-python
+
+# FastAPI
+fastapi
+uvicorn
+
+# Spark (optional, depending on environment)
+pyspark
+
+# Dev
+pytest
